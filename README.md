@@ -1,1 +1,1 @@
-# EdgeMind-Studio
+# EdgeMind-Studio, 
