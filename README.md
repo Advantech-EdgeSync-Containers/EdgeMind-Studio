@@ -46,7 +46,14 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 # cd EdgeMind-Studio
 # docker-compose -f docker-compose-jetson-jp6.2.yml up -d
 ```
-
+### For Huawei Atlas Platform
+```shell
+# docker pull  harbor.edgesync.cloud/xian-embedded/edgemind-studio-huawei-arm64:v1.0.0
+# git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
+# cd EdgeMind-Studio
+# chmod 777  run_edgemindstudio.sh
+# ./run_edgemindstudio.sh
+```
 ## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
 
