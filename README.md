@@ -20,8 +20,7 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 # Container Demo
 
-![demo1](https://github.com/user-attachments/assets/06727370-bacb-49ed-a248-7f5707662ccd)
-
+![EdgeMind-Stuido_jetson-demo-1](https://github.com/user-attachments/assets/bd595a4c-03b1-4123-a7ca-2f0d91558f82)
 
 
 https://github.com/user-attachments/assets/edec5bf5-fa68-4135-b3aa-1bcd7b828154
