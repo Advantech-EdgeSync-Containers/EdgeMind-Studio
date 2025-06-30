@@ -1,6 +1,6 @@
 # Container Overview
 
-After the container is launched, it will start the **EdgeMind Studio** application based on the **Jetson** platform, providing the following core functionalities:
+After the container is launched, it will start the **EdgeMind Studio** application based on the **Jetson** or **Atlas** platform, providing the following core functionalities:
 
 **1. Video Management Features**
 - **Multi-source Video Management:** Supports local cameras, IP network cameras, and uploaded MP4 video files.
@@ -40,7 +40,7 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 # Container Quick Start
 ## Setup Steps:
-
+### For Jetston Platform
 ```shell
 # git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
 # cd EdgeMind-Studio
