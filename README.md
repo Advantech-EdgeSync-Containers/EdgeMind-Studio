@@ -20,7 +20,8 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 # Container Demo
 
-![Uploading 137ea9c8b3b12c87a1667213e5440da1.gif…]()
+![动画3-1](https://github.com/user-attachments/assets/06727370-bacb-49ed-a248-7f5707662ccd)
+
 
 
 # Requirements
