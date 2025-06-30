@@ -1,4 +1,27 @@
-# Environment Requirements
+# Container Overview
+
+After the container is launched, it will start the **EdgeMind Studio** application based on the **Jetson** platform, providing the following core functionalities:
+
+**1. Video Management Features**
+- **Multi-source Video Management:** Supports local cameras, IP network cameras, and uploaded MP4 video files.
+
+- **NVR (Network Video Recorder):** Records and enables playback of connected camera feeds.
+
+**2. Video AI Analysis & Performance Monitoring**
+- **Model Management:** Provides AI model deployment and management for flexible and convenient scalability.
+
+- **AI Intelligent Analysis:** Real-time object detection based on the YOLO model for camera feeds or MP4 videos, with alert notification support.
+
+- **Video AI Region Detection (ROI Analysis):** Allows defining key detection regions (ROI) in the video frame, focusing AI analysis only on specified areas to reduce computational load.
+
+- **Performance Monitoring:** Displays real-time AI processing metrics, including video frame rate, model failure rate, and CPU/GPU resource usage.
+
+- **Multi-screen Live Viewing:** Supports simultaneous display of multiple video streams for real-time monitoring.
+
+# Container Demo
+
+
+# Requirements
 
 ## Hardware
 
@@ -10,7 +33,8 @@
 - Docker Compose (version 1.29 or higher)
 
 
-# Setup Steps:
+# Container Quick Start
+## Setup Steps:
 
 ```shell
 # git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
@@ -18,6 +42,6 @@
 # docker-compose -f docker-compose-jetson-jp6.2.yml up -d
 ```
 
-# How to use?
+## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
 
