@@ -19,6 +19,7 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 - **Multi-screen Live Viewing:** Supports simultaneous display of multiple video streams for real-time monitoring.
 
 # Container Demo
+
 ![Uploading 137ea9c8b3b12c87a1667213e5440da1.gif…]()
 
 
