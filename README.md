@@ -24,6 +24,10 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 
 
+https://github.com/user-attachments/assets/edec5bf5-fa68-4135-b3aa-1bcd7b828154
+
+
+
 # Requirements
 
 ## Hardware
