@@ -1,6 +1,6 @@
 # Container Overview
 
-After the container is launched, it will start the **EdgeMind Studio** application based on the **Jetson** or **Atlas** platform, providing the following core functionalities:
+After the container is launched, it will start the **EdgeMind Studio** application based on the **NVIDIA Jetson** or **HUAWEI Atlas** platform, providing the following core functionalities:
 
 **1. Video Management Features**
 - **Multi-source Video Management:** Supports local cameras, IP network cameras, and uploaded MP4 video files.
@@ -31,6 +31,7 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 ## Hardware
 
 - NVIDIA Jetson platform (Xavier NX/AGX, Orin Nano/NX/AGX, or later)
+- HUAWEI Atlas platform (eg,MIC-ATL2S)
 
 ## Software
 
@@ -40,19 +41,23 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 # Container Quick Start
 ## Setup Steps:
-### For Jetston Platform
+### For NVIDIA Jetston Platform
 ```shell
-# git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
-# cd EdgeMind-Studio
-# docker-compose -f docker-compose-jetson-jp6.2.yml up -d
+git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
+cd EdgeMind-Studio
+# If you want to start using Docker Compose 
+docker-compose -f docker-compose-jetson-jp6.2.yml up -d
+# If you prefer to launch via a run script
 ```
-### For Huawei Atlas Platform
+### For HUAWEI Atlas Platform
 ```shell
-# docker pull  harbor.edgesync.cloud/xian-embedded/edgemind-studio-huawei-arm64:v1.0.0
-# git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
-# cd EdgeMind-Studio
-# chmod 777  run_edgemindstudio.sh
-# ./run_edgemindstudio.sh
+git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
+cd EdgeMind-Studio
+# If you want to start using Docker Compose
+
+# If you prefer to launch via a run script
+chmod 777  run_edgemindstudio.sh
+./run_huawei_edgemindstudio.sh
 ```
 ## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
