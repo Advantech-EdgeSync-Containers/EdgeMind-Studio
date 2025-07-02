@@ -53,11 +53,11 @@ If you want to start using Docker Compose
 cd EdgeMind-Studio 
 docker-compose -f docker-compose-jetson-jp6.2.yml up -d
 ```
-Or if you prefer to launch via a run script
+**Or** if you prefer to launch via a run script
 ```shell
 cd EdgeMind-Studio 
 chmod 777 run_edgemindstudio_jetson.sh
-./run_huawei_edgemindstudio_jetson.sh
+./run_edgemindstudio_jetson.sh
 ```
 ### For HUAWEI Atlas Platform
 If you want to start using Docker Compose
@@ -65,8 +65,9 @@ If you want to start using Docker Compose
 cd EdgeMind-Studio
 docker-compose -f docker-compose-atlas310b.yml up -d 
 ```
-Or if you prefer to launch via a run script
+**Or** if you prefer to launch via a run script
 ```shell
+cd EdgeMind-Studio 
 chmod 777 run_edgemindstudio_atlas310b.sh
 ./run_edgemindstudio_atlas310b.sh
 ```
