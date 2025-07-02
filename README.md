@@ -68,7 +68,7 @@ docker-compose -f docker-compose-atlas310b.yml up -d
 Or if you prefer to launch via a run script
 ```shell
 chmod 777 run_edgemindstudio_atlas310b.sh
-./run_huawei_edgemindstudio_atlas310b.sh
+./run_edgemindstudio_atlas310b.sh
 ```
 ## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
