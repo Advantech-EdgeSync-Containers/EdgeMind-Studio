@@ -56,8 +56,8 @@ cd EdgeMind-Studio
 # If you want to start using Docker Compose
 
 # If you prefer to launch via a run script
-chmod 777  run_edgemindstudio.sh
-./run_huawei_edgemindstudio.sh
+chmod 777  run_edgemindstudio_atlas.sh
+./run_huawei_edgemindstudio_atlas.sh
 ```
 ## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
