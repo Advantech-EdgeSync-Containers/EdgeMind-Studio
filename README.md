@@ -40,24 +40,35 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 
 # Container Quick Start
-## Setup Steps:
-### For NVIDIA Jetston Platform
+We offer two ways to launch EdgeMind Studio: **Docker-Compose** and **script-based startup**. You can use either method as preferred.
+## Step 1: Download the launch scripts and docker-compose.yaml file
 ```shell
 git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
-cd EdgeMind-Studio
-# If you want to start using Docker Compose 
+```
+## Step 2: Start EdgeMind Studio container
+
+### For NVIDIA Jetston Platform
+If you want to start using Docker Compose
+```shell
+cd EdgeMind-Studio 
 docker-compose -f docker-compose-jetson-jp6.2.yml up -d
-# If you prefer to launch via a run script
+```
+Or if you prefer to launch via a run script
+```shell
+cd EdgeMind-Studio 
+chmod 777 run_edgemindstudio_jetson.sh
+./run_huawei_edgemindstudio_jetson.sh
 ```
 ### For HUAWEI Atlas Platform
+If you want to start using Docker Compose
 ```shell
-git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
 cd EdgeMind-Studio
-# If you want to start using Docker Compose
-
-# If you prefer to launch via a run script
-chmod 777  run_edgemindstudio_atlas.sh
-./run_huawei_edgemindstudio_atlas.sh
+docker-compose -f docker-compose-atlas-jp6.2.yml up -d 
+```
+Or if you prefer to launch via a run script
+```shell
+chmod 777 run_edgemindstudio_atlas310B.sh
+./run_huawei_edgemindstudio_atlas310B.sh
 ```
 ## How to use?
 Once the setup is complete, you can access EdgeMind-Studio through a web browser at http://$ip:8080, where $ip refers to the device’s actual IP address.
