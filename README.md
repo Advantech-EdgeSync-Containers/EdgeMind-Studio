@@ -51,7 +51,7 @@ git clone https://github.com/Advantech-EdgeSync-Containers/EdgeMind-Studio.git
 If you want to start using Docker Compose
 ```shell
 cd EdgeMind-Studio 
-docker-compose -f docker-compose-jetson-jp6.2.yml up -d
+docker-compose -f docker-compose-jetson.yml up -d
 ```
 **Or** if you prefer to launch via a run script
 ```shell
