@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -d --privileged --runtime nvidia --network host --log-driver json-file --log-opt max-size=100m --restart=always --name edgemindstudio -v /home/user/project:/location/in/container -v /usr/bin/tegrastats:/usr/bin/tegrastats -v /sys:/sys -v /tmp/.X11-unix:/tmp/.X11-unix --device /dev/video0 --device /dev/video1 --device /dev/video2 --device /dev/video3 harbor.edgesync.cloud/xian-embedded/edgemind-studio-jetson-arm64:v1.0.1

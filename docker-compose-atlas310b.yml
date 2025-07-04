@@ -1,0 +1,61 @@
+version: '2'
+
+services:
+  studio:
+    image: harbor.edgesync.cloud/xian-embedded/edgemind-studio-huawei-arm64:v1.0.0
+    restart: always
+    network_mode: host
+    privileged: true
+    container_name: edgeMindStudio
+    devices:
+      - "/dev/upgrade:/dev/upgrade"
+      - "/dev/davinci0:/dev/davinci0"
+      - "/dev/davinci_manager_docker:/dev/davinci_manager"
+      - "/dev/vdec:/dev/vdec"
+      - "/dev/vpc:/dev/vpc"
+      - "/dev/pngd:/dev/pngd"
+      - "/dev/venc:/dev/venc"
+      - "/dev/sys:/dev/sys"
+      - "/dev/svm0:/dev/svm0"
+      - "/dev/acodec:/dev/acodec"
+      - "/dev/ai:/dev/ai"
+      - "/dev/ao:/dev/ao"
+      - "/dev/hdmi:/dev/hdmi"
+      - "/dev/ts_aisle:/dev/ts_aisle"
+      - "/dev/dvpp_cmdlist:/dev/dvpp_cmdlist"
+      - "/dev/video0"
+      - "/dev/video1"
+      - "/dev/video2"
+      - "/dev/video3"
+      - "/dev/video4"
+    volumes:
+      - "/etc/sys_version.conf:/etc/sys_version.conf:ro"
+      - "/etc/hdcBasic.cfg:/etc/hdcBasic.cfg:ro"
+      - "/usr/lib64/libaicpu_processer.so:/usr/lib64/libaicpu_processer.so:ro"
+      - "/usr/lib64/libaicpu_prof.so:/usr/lib64/libaicpu_prof.so:ro"
+      - "/usr/lib64/libaicpu_sharder.so:/usr/lib64/libaicpu_sharder.so:ro"
+      - "/usr/lib64/libadump.so:/usr/lib64/libadump.so:ro"
+      - "/usr/lib64/libtsd_eventclient.so:/usr/lib64/libtsd_eventclient.so:ro"
+      - "/usr/lib64/libaicpu_scheduler.so:/usr/lib64/libaicpu_scheduler.so:ro"
+      - "/usr/lib64/libcrypto.so.3:/usr/lib64/libcrypto.so.3:ro"
+      - "/usr/lib/aarch64-linux-gnu/libyaml-0.so.2.0.6:/usr/lib64/libyaml-0.so.2:ro"
+      - "/usr/lib64/libdcmi.so:/usr/lib64/libdcmi.so:ro"
+      - "/usr/lib64/libmpi_dvpp_adapter.so:/usr/lib64/libmpi_dvpp_adapter.so:ro"
+      - "/usr/lib64/aicpu_kernels/:/usr/lib64/aicpu_kernels/:ro"
+      - "/usr/local/sbin/npu-smi:/usr/local/sbin/npu-smi:ro"
+      - "/usr/lib64/libunified_timer.so:/usr/lib64/libunified_timer.so"
+      - "/usr/lib64/libstackcore.so:/usr/lib64/libstackcore.so:ro"
+      - "/usr/lib64/libmmpa.so:/usr/lib64/libmmpa.so"
+      - "/usr/local/Ascend/driver/lib64:/usr/local/Ascend/driver/lib64:ro"
+      - "/var/slogd:/var/slogd:ro"
+      - "/var/dmp_daemon:/var/dmp_daemon:ro"
+    environment:
+      TZ: "Asia/Shanghai"
+      LD_LIBRARY_PATH: "/usr/lib64:/usr/local/Ascend/driver/lib64"
+    logging:
+      driver: json-file
+      options:
+        max-size: "1m"
+    dns:
+      - "8.8.8.8"
+      - "114.114.114.114"

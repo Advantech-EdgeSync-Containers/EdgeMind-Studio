@@ -1,0 +1,31 @@
+version: '3'
+services:
+     studio: 
+        image: harbor.edgesync.cloud/xian-embedded/edgemind-studio-jetson-arm64:v1.0.1
+        restart: always
+        network_mode: host
+        volumes:
+                - /usr/bin/tegrastats:/usr/bin/tegrastats
+                - /sys:/sys
+                - /tmp/.X11-unix:/tmp/.X11-unix
+                - /home/user/project:/location/in/container
+
+        privileged: true
+        runtime: nvidia
+        devices:
+                - /dev/video0:/dev/video0
+                - /dev/video1:/dev/video1
+                - /dev/video2:/dev/video2
+                - /dev/video3:/dev/video3
+                - /dev/video4:/dev/video4
+                - /dev/video5:/dev/video5
+        environment:
+           TZ: "Asia/Shanghai"
+        logging:
+           driver: json-file
+           options:
+              max-size: "1m"  # 限制每个日志文件为10MB
+        dns:
+                - 8.8.8.8
+                - 114.114.114.114
+        container_name: edgeMindStudio
