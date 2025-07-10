@@ -31,9 +31,11 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 ## Hardware
 
 - **NVIDIA Jetson platform**
+  
   Verified Device: MIC-332/ITA-560 
 
 - **HUAWEI Atlas platform**
+  
   Verified Device: MIC-ATL2S
 
 ## Software
