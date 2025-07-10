@@ -30,8 +30,10 @@ After the container is launched, it will start the **EdgeMind Studio** applicati
 
 ## Hardware
 
-- NVIDIA Jetson platform (Xavier NX/AGX, Orin Nano/NX/AGX, or later)
-- HUAWEI Atlas platform (eg,MIC-ATL2S)
+- NVIDIA Jetson platform
+  
+- HUAWEI Atlas platform (
+  MIC-ATL2S
 
 ## Software
 
