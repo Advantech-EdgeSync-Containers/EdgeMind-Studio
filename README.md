@@ -66,6 +66,7 @@ chmod 777 run_edgemindstudio_jetson.sh
 ```
 ### For HUAWEI Atlas Platform
 On HUAWEI platforms, use the model-specific docker-compose yaml or script.
+
 If you want to start using Docker Compose
 ```shell
 cd EdgeMind-Studio
